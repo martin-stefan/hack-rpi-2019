@@ -7,6 +7,7 @@
   <title>Pls Don't Die</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="SaveForm.js"></script>
 </head>
 
 <body>
@@ -31,8 +32,9 @@
             General
           </p>
           <ul class="menu-list">
+            <li><a>Form</a></li>
             <li><a>Map</a></li>
-            <li><a>Matches</a></li>
+            <li><a href="match.html">Matches</a></li>
           </ul>
         </aside>
       </div>
@@ -220,7 +222,9 @@
         </div>
         <div class="field is-grouped is-grouped-left">
           <div class="control">
-            <button class="button is-success" onclick="saveSubmit()">Submit</button>
+            <button class="button is-success" onclick="saveSubmit()">
+              <a href="match.html">Submit</a>
+            </button>
           </div>
           <div class="control">
             <button class="button is-success is-light">Cancel</button>

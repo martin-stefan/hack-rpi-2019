@@ -8,6 +8,7 @@ function saveSubmit() {
    var lname = document.getElementById("lastName");
    lname = lname.upper();
    var dob = document.getElementById("dob");
+   var camp = document.getElementById("campName")
    var home = document.getElementById("home");
    home = home.lower();
    
@@ -15,7 +16,7 @@ function saveSubmit() {
 
    if(fh!=-1) // If the file has been successfully opened
    {
-      fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + home + "|" + looking); // Write the string to a file
+      fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home + "|" + looking); // Write the string to a file
       fclose(fh); // Close the file
    }
 }
