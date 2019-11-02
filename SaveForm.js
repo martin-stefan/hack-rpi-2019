@@ -1,15 +1,26 @@
-function SaveForm() {
-   var fname = document.getElementById("firstName");
-   fname = fname.lower()
-   var mname = document.getElementById("middleName");
-   mname = mname.lower()
-   var lname = document.getElementById("lastName");
-   lname = lname.lower()
-   var dob = document.getElementById("dob");
-   dob = dob.lower()
-   var home = document.getElementById("home");
-   home = home.lower()
+var looking = "";
 
+function saveSubmit() {
+   var fname = document.getElementById("firstName");
+   fname = fname.lower();
+   var mname = document.getElementById("middleName");
+   mname = mname.lower();
+   var lname = document.getElementById("lastName");
+   lname = lname.upper();
+   var dob = document.getElementById("dob");
+   var home = document.getElementById("home");
+   home = home.lower();
+   
+   var fh = fopen("data.txt", 3); // Open the file for writing
+
+   if(fh!=-1) // If the file has been successfully opened
+   {
+      fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + home + "|" + looking); // Write the string to a file
+      fclose(fh); // Close the file
+   }
+}
+
+function saveAdd(){
    var theirDOB = "";
 
    if (document.getElementById("theirDOB") == "mm/dd/yyyy") {
@@ -19,13 +30,13 @@ function SaveForm() {
       theirDOB = document.getElementById("theirDOB");
    }
 
-   var looking = document.getElementById("theirName") + theirDOB;
-   
-   var fh = fopen("data.txt", 3); // Open the file for writing
+   var name = document.getElementById("theirFirstName") + " " + document.getElementById("theirMiddleName") + " " + document.getElementById("theirLastName");
 
-   if(fh!=-1) // If the file has been successfully opened
-   {
-      fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + home + "|" + looking); // Write the string to a file
-      fclose(fh); // Close the file
+
+   if (looking == ""){
+      looking = name + " " + theirDOB;
+   }
+   else{
+      looking = looking + "&" + name + " " + theirDOB;
    }
 }
