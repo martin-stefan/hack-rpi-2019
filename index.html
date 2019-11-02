@@ -10,11 +10,12 @@
 </head>
 
 <body>
+
   <section class="hero is-success">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Find My People
+          Find My Family
         </h1>
         <h2 class="subtitle">
           Best for Disasters
@@ -22,10 +23,25 @@
       </div>
     </div>
   </section>
-
-  <div class='columns is-centered'>
-    <div class='column is-half'>
-      <div class="field">
+  <section class='section'>
+    <div class='columns is-pulled-left is-vcentered'>
+      <div class='columnn'>
+        <aside class="menu">
+          <p class="menu-label">
+            General
+          </p>
+          <ul class="menu-list">
+            <li><a>Map</a></li>
+            <li><a>Matches</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class='section'>
+    <div class='columns is-centered'>
+      <div class='column is-half'>
+        <div class="field">
           <label class="label">Camp Name</label>
           <div class="control has-icons-left has-icons-right">
             <input class="input is-success" type="text" placeholder="Camp Name" value="">
@@ -38,122 +54,187 @@
           </div>
         </div>
 
-      <div class="field">
-        <label class="label">Full Name</label>
-        <div class="control has-icons-left has-icons-right">
-          <input class="input is-success" type="text" placeholder="First Name Middle Initial Last Name" value="">
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-          <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-          </span>
+        <div class="field">
+          <label class="label">First Name</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="First Name" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
         </div>
-      </div>
 
-    <div class="field">
-      <label class="label">Date of Birth</label>
-      <div class="control has-icons-left has-icons-right">
-        <input class="input is-success" type="date" placeholder="Month/Day/Year" value="">
-        <span class="icon is-small is-left">
-          <i class="fa fa-calendar" aria-hidden="true"></i>
-        </span>
-        <span class="icon is-small is-right">
-          <i class="fas fa-check"></i>
-        </span>
-      </div>
-    </div>
+        <div class="field">
+          <label class="label">Middle Name</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Middle Name" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
 
-    <div class="field">
-      <label class="label">Medical Condition</label>
-      <div class="control">
-        <div class="select">
-          <select>
-            <option>Good</option>
-            <option>Poor</option>
-            <option>Needs Medical Attention</option>
-          </select>
+        <div class="field">
+          <label class="label">Last Name</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Last Name" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="field">
-        <label class="label">Medical Needs</label>
-        <div class="control has-icons-left has-icons-right">
-          <input class="input is-success" type="text" placeholder="Enter any medical conditions" value="">
-          <span class="icon is-small is-left">
-            <i class="fas fa-medkit"></i>
-          </span>
-          <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-          </span>
+        <div class="field">
+          <label class="label">Date of Birth</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="date" placeholder="Month/Day/Year" value="">
+            <span class="icon is-small is-left">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
         </div>
-      </div>
 
-    <div class="field">
-      <label class='label'>Are you looking for someone?</label>
-      <div class="control">
-        <label class="radio">
-          <input type="radio" name="question">
-          Yes
-        </label>
-        <label class="radio">
-          <input type="radio" name="question">
-          No
-        </label>
+        <div class="field">
+          <label class="label">Where do you live?</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Hometown" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Medical Condition</label>
+          <div class="control">
+            <div class="select">
+              <select>
+                <option>Good</option>
+                <option>Poor</option>
+                <option>Needs Medical Attention</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Medical Needs</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Enter any medical conditions" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-medkit"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class='label'>Are you looking for someone?</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="question">
+              Yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="question">
+              No
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">First Name</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="First Name" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Middle Name</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Middle Name" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+            <label class="label">Last Name</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="text" placeholder="Last Name" value="">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+          </div>
+
+
+        <div class="field">
+          <label class="label">Their Date of Birth</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="date" placeholder="Month/Day/Year" value="">
+            <span class="icon is-small is-left">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field is-grouped is-grouped-right">
+          <div class="control">
+            <button class="button is-success">Add</button>
+          </div>
+          <div class="control">
+            <button class="button is-success is-light">Cancel</button>
+          </div>
+        </div>
+        <div class="field is-grouped is-grouped-left">
+          <div class="control">
+            <button class="button is-success">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-success is-light">Cancel</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-    
-    <div class="field">
-        <label class="label">Their Full Name</label>
-        <div class="control has-icons-left has-icons-right">
-          <input class="input is-success" type="text" placeholder="First Name Middle Initial Last Name" value="">
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-          <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-          </span>
-        </div>
-      </div>
-    
-    <div class="field">
-        <label class="label">Their Date of Birth</label>
-        <div class="control has-icons-left has-icons-right">
-          <input class="input is-success" type="date" placeholder="Month/Day/Year" value="">
-          <span class="icon is-small is-left">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-          </span>
-          <span class="icon is-small is-right">
-            <i class="fas fa-check"></i>
-          </span>
-        </div>
-      </div>
-    
-      <div class="field is-grouped is-grouped-right">
-        <div class="control">
-          <button class="button is-link">Add</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light">Cancel</button>
-        </div>
-      </div>
-    </div>
-    <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link">Complete</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light">Cancel</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
+
 
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Find my people</strong> by <a>a Bunch of Random RPI Students</a>
+        <strong>Find my Family</strong> by <a>a Bunch of Random RPI Students</a>
       </p>
     </div>
   </footer>
