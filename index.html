@@ -1,14 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Page Title</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pls Don't Die</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
+
 <body>
-  
+  <section class="hero is-success">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Find My People
+        </h1>
+        <h2 class="subtitle">
+          Best for Disasters
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <div class='columns is-centered'>
+    <div class='column is-half'>
+      <div class="field">
+          <label class="label">Camp Name</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-success" type="text" placeholder="Camp Name" value="">
+            <span class="icon is-small is-left">
+              <i class="far fa-building"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+
+      <div class="field">
+        <label class="label">Full Name</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="First Name Middle Initial Last Name" value="">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+      </div>
+
+    <div class="field">
+      <label class="label">Date of Birth</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input is-success" type="date" placeholder="Month/Day/Year" value="">
+        <span class="icon is-small is-left">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-check"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Medical Condition</label>
+      <div class="control">
+        <div class="select">
+          <select>
+            <option>Good</option>
+            <option>Poor</option>
+            <option>Needs Medical Attention</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Medical Needs</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="Enter any medical conditions" value="">
+          <span class="icon is-small is-left">
+            <i class="fas fa-medkit"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+      </div>
+
+    <div class="field">
+      <label class='label'>Are you looking for someone?</label>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="question">
+          Yes
+        </label>
+        <label class="radio">
+          <input type="radio" name="question">
+          No
+        </label>
+    </div>
+  </div>
+    
+    <div class="field">
+        <label class="label">Their Full Name</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="First Name Middle Initial Last Name" value="">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+      </div>
+    
+    <div class="field">
+        <label class="label">Their Date of Birth</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="date" placeholder="Month/Day/Year" value="">
+          <span class="icon is-small is-left">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+      </div>
+    
+      <div class="field is-grouped is-grouped-right">
+        <div class="control">
+          <button class="button is-link">Add</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Complete</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Find my people</strong> by <a>a Bunch of Random RPI Students</a>
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
