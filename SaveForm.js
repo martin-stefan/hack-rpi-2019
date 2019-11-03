@@ -2,27 +2,35 @@ var looking = "";
 
 function saveSubmit() {
    var fname = document.getElementById("firstName");
-   fname = fname.lower();
    var mname = document.getElementById("middleName");
-   mname = mname.lower();
    var lname = document.getElementById("lastName");
-   lname = lname.upper();
    var dob = document.getElementById("dob");
    var camp = document.getElementById("campName")
    var home = document.getElementById("home");
-   home = home.lower();
-   
-   var fh = fopen("data.txt", 3); // Open the file for writing
 
+   
    if (document.getElementById("no").checked) {
+      document.open("data.txt","replace"); // Open the file for writing
+      document.write(fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home); // Write the string to a file
       document.location.reload();
    }
+   
+   fclose(fh); // Close the file
+   // var fh = fopen("data.txt", 3); // Open the file for writing
 
-   if(fh!=-1) // If the file has been successfully opened
-   {
-      fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home + "|" + looking); // Write the string to a file
-      fclose(fh); // Close the file
-   }
+   // if(fh!=-1) // If the file has been successfully opened
+   // {
+   //    fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home + "|" + looking); // Write the string to a file
+   //    fclose(fh); // Close the file
+   // }
+   
+   // var fh = fopen("data.txt", 3); // Open the file for writing
+
+   // if(fh!=-1) // If the file has been successfully opened
+   // {
+   //    fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home + "|" + looking); // Write the string to a file
+   //    fclose(fh); // Close the file
+   // }
 
 
 }
