@@ -14,11 +14,17 @@ function saveSubmit() {
    
    var fh = fopen("data.txt", 3); // Open the file for writing
 
+   if (document.getElementById("no").checked) {
+      document.location.reload();
+   }
+
    if(fh!=-1) // If the file has been successfully opened
    {
       fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home + "|" + looking); // Write the string to a file
       fclose(fh); // Close the file
    }
+
+
 }
 
 function saveAdd(){
