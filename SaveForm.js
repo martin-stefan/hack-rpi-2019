@@ -14,6 +14,7 @@ function saveSubmit() {
       document.write(fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home); // Write the string to a file
       document.location.reload();
       document.close("data.txt");
+      
    }
 
 
