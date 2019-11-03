@@ -13,24 +13,8 @@ function saveSubmit() {
       document.open("data.txt","replace"); // Open the file for writing
       document.write(fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home); // Write the string to a file
       document.location.reload();
+      document.close("data.txt");
    }
-   
-   fclose(fh); // Close the file
-   // var fh = fopen("data.txt", 3); // Open the file for writing
-
-   // if(fh!=-1) // If the file has been successfully opened
-   // {
-   //    fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home + "|" + looking); // Write the string to a file
-   //    fclose(fh); // Close the file
-   // }
-   
-   // var fh = fopen("data.txt", 3); // Open the file for writing
-
-   // if(fh!=-1) // If the file has been successfully opened
-   // {
-   //    fwrite(fh, fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home + "|" + looking); // Write the string to a file
-   //    fclose(fh); // Close the file
-   // }
 
 
 }
