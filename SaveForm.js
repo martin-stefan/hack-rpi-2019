@@ -1,8 +1,8 @@
 var looking = "";
 
 function saveSubmit() {
-   var fs = require('fs')
-   
+   var fs = require('fs');
+
    var fname = document.getElementById("firstName");
    var mname = document.getElementById("middleName");
    var lname = document.getElementById("lastName");
