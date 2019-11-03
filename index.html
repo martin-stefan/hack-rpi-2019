@@ -151,18 +151,18 @@
           <label class='label'>Are you looking for someone?</label>
           <div class="control">
             <label class="radio">
-              <input type="radio" name="question">
+              <input type="radio" name="question" id='yes'>
               Yes
             </label>
             <label class="radio">
-              <input type="radio" name="question">
+              <input type="radio" name="question" id='no'>
               No
             </label>
           </div>
         </div>
 
         <div class="field">
-          <label class="label">First Name</label>
+          <label class="label" id='theirFirstName'>First Name</label>
           <div class="control has-icons-left has-icons-right">
             <input class="input is-success" type="text" placeholder="First Name" value="">
             <span class="icon is-small is-left">
@@ -222,9 +222,7 @@
         </div>
         <div class="field is-grouped is-grouped-left">
           <div class="control">
-            <button class="button is-success" onclick="saveSubmit()">
-              <a href="match.html">Submit</a>
-            </button>
+            <button class="button is-success" onclick="saveSubmit()">Submit</button>
           </div>
           <div class="control">
             <button class="button is-success is-light">Cancel</button>
