@@ -1,3 +1,6 @@
+import "fs-module";
+const fs = require('fs')
+
 var looking = "";
 
 function saveSubmit() {
@@ -8,13 +11,14 @@ function saveSubmit() {
    var camp = document.getElementById("campName")
    var home = document.getElementById("home");
 
+   let data = fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home;
+
    
    if (document.getElementById("no").checked) {
-      document.open("data.txt","replace"); // Open the file for writing
-      document.write(fname + "|" + mname + "|" + lname + "|" + dob + "|" + camp + "|" + home); // Write the string to a file
+      fs.writeFile('data.txt', data, (err) => { 
+         if (err) throw err; 
+      }) 
       document.location.reload();
-      document.close("data.txt");
-      
    }
 
 
