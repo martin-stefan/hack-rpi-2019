@@ -1,6 +1,23 @@
 var looking = "";
 
 function saveSubmit() {
+
+   //ran out of time but instead of passing data to a file (because that
+   //does not work for client side) would have used jquery ajax instead to get
+   //form data and post it directly to python where it would be parsed and
+   //put into the mongodb that we have set up
+
+   /*
+   username = $("#username").val(); 
+   password = $("#password").val();
+
+   $("#post-btn").click(function(){        
+       $.post("process.php", { username:username, password:password } ,function(data){
+           alert(data);
+       });
+   });
+   */
+
    var fs = require('fs');
 
    var fname = document.getElementById("firstName");
