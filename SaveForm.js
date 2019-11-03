@@ -1,9 +1,8 @@
-import "fs-module";
-const fs = require('fs')
-
 var looking = "";
 
 function saveSubmit() {
+   var fs = require('fs')
+   
    var fname = document.getElementById("firstName");
    var mname = document.getElementById("middleName");
    var lname = document.getElementById("lastName");
@@ -17,7 +16,8 @@ function saveSubmit() {
    if (document.getElementById("no").checked) {
       document.location.reload();
       fs.writeFile('data.txt', data, (err) => { 
-         if (err) throw err; 
+         if (err) throw err;
+         console.log('Saved!'); 
       }) 
 
    }
