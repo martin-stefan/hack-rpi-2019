@@ -15,10 +15,11 @@ function saveSubmit() {
 
    
    if (document.getElementById("no").checked) {
+      document.location.reload();
       fs.writeFile('data.txt', data, (err) => { 
          if (err) throw err; 
       }) 
-      document.location.reload();
+
    }
 
 
